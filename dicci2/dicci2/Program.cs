@@ -14,6 +14,10 @@ namespace dicci2
             productos.Add(101,"Manzanas");
             productos.Add(102, "Peras");
             productos.Add(103, "Uvas");
+            Console.WriteLine("Los productos en la lista son:");
+            Console.WriteLine(productos[101]);
+            Console.WriteLine(productos[102]);
+            Console.WriteLine(productos[103]);
         }
     }
 }
