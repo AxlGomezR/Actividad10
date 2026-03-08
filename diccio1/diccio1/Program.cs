@@ -11,6 +11,9 @@ namespace diccio1
         static void Main(string[] args)
         {
             Console.WriteLine("Probando");
+            Console.WriteLine("Probando");
+            Console.WriteLine("Probando");
+            Console.WriteLine("Probando");
         }
     }
 }
