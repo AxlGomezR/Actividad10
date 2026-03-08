@@ -17,6 +17,14 @@ namespace dicci18
                 Console.WriteLine("Ingrese el nombre de usuario");
                 string usuario = Console.ReadLine();
                 Console.Clear();
+                if (usuarios.ContainsKey(usuario))
+                {
+                    Console.WriteLine("El usuario ingresado ya existe\n");
+                }
+                else
+                {
+
+                }
             } while (continuar==false);
         }
     }
