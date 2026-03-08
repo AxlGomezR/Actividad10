@@ -36,7 +36,11 @@ namespace dicci16
                             }
                             else
                             {
-
+                                Console.WriteLine("Ingrese el nombre del estudiante");
+                                string nombre = Console.ReadLine();
+                                Console.Clear();
+                                estudiantes.Add(clave,nombre);
+                                Console.WriteLine("El estudiante se ha añadido correctamente");
                             }
                         } while (continuar == false);
                         break;
