@@ -37,12 +37,19 @@ namespace dicci19
                             }
                             else
                             {
-                                continuar = true;
                                 Console.WriteLine("Ingrese la nota del estudiante");
                                 double nota = double.Parse(Console.ReadLine());
                                 Console.Clear();
-                                notas.Add(nombre, nota);
-                                Console.WriteLine("La nota se ha agregado correctamente\n");
+                                if (nota >= 0 && nota <= 100)
+                                {
+                                    continuar = true;
+                                    notas.Add(nombre, nota);
+                                    Console.WriteLine("La nota se ha agregado correctamente\n");
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Asegurese de ingresar una nota válida");
+                                }
                             }
                         } while (continuar==false);
                         break;
