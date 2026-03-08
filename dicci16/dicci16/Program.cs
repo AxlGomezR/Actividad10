@@ -41,8 +41,26 @@ namespace dicci16
                                 Console.Clear();
                                 estudiantes.Add(clave,nombre);
                                 Console.WriteLine("El estudiante se ha añadido correctamente");
+                                continuar = true;
                             }
                         } while (continuar == false);
+                        break;
+                    case 2:
+                        if (estudiantes.Count == 0)
+                        {
+                            Console.WriteLine("No se ha ingresado ningún estudiante");
+                        }
+                        else
+                        {
+                            foreach(var item in estudiantes)
+                            {
+                                Console.WriteLine($"Clave: {item.Key} - Nombre: {item.Value}");
+                            }
+                            Console.WriteLine("");
+                        }
+                        break;
+                    case 3:
+                        Console.WriteLine("Saliendo...");
                         break;
                     default:
                         Console.WriteLine("Asegurese de ingresar una opción válida");
