@@ -12,8 +12,11 @@ namespace dicci6
         {
             Dictionary<int, string> estudiantes = new Dictionary<int, string>();
             estudiantes.Add(1,"Jill");
-            estudiantes.Add(1, "Rebeca");
-            estudiantes.Add(1, "Chris");
+            estudiantes.Add(2, "Rebeca");
+            estudiantes.Add(3, "Chris");
+            Console.WriteLine($"Se eliminará al estudiante: {estudiantes[2]}");
+            estudiantes.Remove(2);
+            Console.WriteLine("Se ha removido correctamente");
         }
     }
 }
