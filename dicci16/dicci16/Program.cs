@@ -20,6 +20,15 @@ namespace dicci16
                 Console.WriteLine("3) Salir");
                 opcion = int.Parse(Console.ReadLine());
                 Console.Clear();
+                switch (opcion)
+                {
+                    case 1:
+
+                        break;
+                    default:
+                        Console.WriteLine("Asegurese de ingresar una opción válida");
+                        break;
+                }
             } while (opcion!=3);
         }
     }
