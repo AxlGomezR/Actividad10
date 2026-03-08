@@ -10,6 +10,7 @@ namespace dicci3
     {
         static void Main(string[] args)
         {
+            Dictionary<string,double> dic = new Dictionary<string,double>();
         }
     }
 }
