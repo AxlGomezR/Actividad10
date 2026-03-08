@@ -42,6 +42,7 @@ namespace dicci17
                                 Console.Clear();
                                 inventario.Add(clave,nombre);
                                 Console.WriteLine("El producto se ha añadido correctamente\n");
+                                continuar = true;
                             }
                         } while (continuar==false);
                         break;
@@ -57,12 +58,31 @@ namespace dicci17
                             if (inventario.ContainsKey(clave))
                             {
                                 Console.WriteLine($"Se ha eliminado el producto {inventario[clave]}\n");
+                                inventario.Remove(clave);
                             }
                             else
                             {
                                 Console.WriteLine("La clave ingresada no existe\n");
                             }
                         }
+                        break;
+                    case 3:
+                        if (inventario.Count == 0)
+                        {
+                            Console.WriteLine("No se ha ingresado ningún producto\n");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Productos ingresados:");
+                            foreach (var item in inventario)
+                            {
+                                Console.WriteLine(item.Value);
+                            }
+                            Console.WriteLine("");
+                        }
+                        break;
+                    case 4:
+                        Console.WriteLine("Saliendo...");
                         break;
                     default:
                         Console.WriteLine("Asegurese de ingresar una opción válida");
