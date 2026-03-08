@@ -70,7 +70,16 @@ namespace dicci19
                                     Console.WriteLine("Ingrese la nueva nota del estudiante");
                                     double nota = double.Parse(Console.ReadLine());
                                     Console.Clear();
-
+                                    if (nota >= 0 && nota <= 100)
+                                    {
+                                        notas[nombre] = nota;
+                                        Console.WriteLine("La nota se ha modificado correctamente");
+                                        continuar = true;
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("Asegurese de ingresar una nota válida");
+                                    }
                                 }
                                 else
                                 {
