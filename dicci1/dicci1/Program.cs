@@ -13,6 +13,7 @@ namespace dicci1
             Dictionary<int, string> estudiantes = new Dictionary<int, string>();
             estudiantes.Add(1, "Juan");
             estudiantes.Add(2, "Carmen");
+            Console.WriteLine($"nombre del estudiante: {estudiantes[1]}");
         }
     }
 }

@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\axlja\\Desktop\\Udeo\\Tareas U\\3er semestre\\progra 3\\Actividad10\\dicci1\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{68BC6557-739C-4A69-A1C0-EB4441BB492F}|dicci1\\dicci1.csproj|c:\\users\\axlja\\desktop\\udeo\\tareas u\\3er semestre\\progra 3\\actividad10\\dicci1\\dicci1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68BC6557-739C-4A69-A1C0-EB4441BB492F}|dicci1\\dicci1.csproj|solutionrelative:dicci1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -18,6 +23,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\axlja\\Desktop\\Udeo\\Tareas U\\3er semestre\\progra 3\\Actividad10\\dicci1\\dicci1\\Program.cs",
+              "RelativeDocumentMoniker": "dicci1\\Program.cs",
+              "ToolTip": "C:\\Users\\axlja\\Desktop\\Udeo\\Tareas U\\3er semestre\\progra 3\\Actividad10\\dicci1\\dicci1\\Program.cs*",
+              "RelativeToolTip": "dicci1\\Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-08T03:00:53.507Z",
+              "EditorCaption": ""
             }
           ]
         }
