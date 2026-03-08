@@ -12,9 +12,16 @@ namespace dicci10
         {
             Dictionary<int,string> inventario = new Dictionary<int,string>();
             inventario.Add(101, "Alambre");
-            inventario.Add(101, "Pegamento");
-            inventario.Add(101, "Martillo");
-            
+            inventario.Add(102, "Pegamento");
+            inventario.Add(103, "Martillo");
+            bool continuar = false;
+            do
+            {
+                Console.WriteLine("Ingrese la clave del producto que desea eliminar");
+                int clave = int.Parse(Console.ReadLine());
+                Console.Clear();
+
+            } while (continuar==false);
         }
     }
 }
