@@ -10,7 +10,12 @@ namespace dicci4
     {
         static void Main(string[] args)
         {
-
+            Dictionary<int,string> ciudades = new Dictionary<int,string>();
+            ciudades.Add(1,"Ciudad de Guatemala");
+            ciudades.Add(2, "New York");
+            ciudades.Add(3,"Paris");
+            ciudades.Add(4,"Buenos Aires");
+            ciudades.Add(5,"Medellín");
         }
     }
 }
