@@ -22,7 +22,8 @@ namespace dicci9
                 Console.Clear();
                 if (notas.ContainsKey(nombre))
                 {
-                    
+                    continuar = true;
+                    Console.WriteLine($"la nota de {nombre} es: {notas[nombre]}");
                 }
                 else
                 {
