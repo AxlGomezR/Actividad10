@@ -15,6 +15,11 @@ namespace dicci13
             notas.Add("Estudiante1", 80);
             notas.Add("Estudiante1", 64);
             notas.Add("Estudiante1", 100);
+            int sumaNotas=0;
+            foreach (var item in notas) {
+                sumaNotas += item.Value;
+            }
+            
         }
     }
 }
