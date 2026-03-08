@@ -10,6 +10,14 @@ namespace dicci18
     {
         static void Main(string[] args)
         {
+            Dictionary<string, string> usuarios = new Dictionary<string, string>();
+            bool continuar = false;
+            do
+            {
+                Console.WriteLine("Ingrese el nombre de usuario");
+                string usuario = Console.ReadLine();
+                Console.Clear();
+            } while (continuar==false);
         }
     }
 }
