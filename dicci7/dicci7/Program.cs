@@ -10,6 +10,10 @@ namespace dicci7
     {
         static void Main(string[] args)
         {
+            Dictionary<int,string> productos = new Dictionary<int,string>();
+            productos.Add(1,"Pan");
+            productos.Add(2, "Salchichas");
+            productos.Add(3, "Agua");
         }
     }
 }
