@@ -16,7 +16,10 @@ namespace dicci12
             productos.Add(103, "Pera");
             productos.Add(104, "Papaya");
             productos.Add(105, "Manzana");
-            
+            foreach (var item in productos)
+            {
+                Console.WriteLine($"Clave: {item.Key} - Nombre: {item.Value}");
+            }
         }
     }
 }
