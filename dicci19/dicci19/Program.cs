@@ -48,10 +48,36 @@ namespace dicci19
                                 }
                                 else
                                 {
-                                    Console.WriteLine("Asegurese de ingresar una nota válida");
+                                    Console.WriteLine("Asegurese de ingresar una nota válida\n");
                                 }
                             }
                         } while (continuar==false);
+                        break;
+                    case 2:
+                        if (notas.Count == 0)
+                        {
+                            Console.WriteLine("No se ha ingresado ninguna nota");
+                        }
+                        else
+                        {
+                            do
+                            {
+                                Console.WriteLine("Ingrese el nombre del estudiante cuya nota desea modificar");
+                                string nombre = Console.ReadLine();
+                                Console.Clear();
+                                if (notas.ContainsKey(nombre))
+                                {
+                                    Console.WriteLine("Ingrese la nueva nota del estudiante");
+                                    double nota = double.Parse(Console.ReadLine());
+                                    Console.Clear();
+
+                                }
+                                else
+                                {
+                                    Console.WriteLine("El nombre ingresado no existe\n");
+                                }
+                            } while (continuar==false);
+                        }
                         break;
                     default:
                         Console.WriteLine("Asegurese de ingresar una opción válida");
