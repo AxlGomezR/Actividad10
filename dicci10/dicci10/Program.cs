@@ -20,7 +20,14 @@ namespace dicci10
                 Console.WriteLine("Ingrese la clave del producto que desea eliminar");
                 int clave = int.Parse(Console.ReadLine());
                 Console.Clear();
+                if (inventario.ContainsKey(clave))
+                {
 
+                }
+                else
+                {
+                    Console.WriteLine("La clave ingresada no existe");
+                }
             } while (continuar==false);
         }
     }
