@@ -22,7 +22,9 @@ namespace dicci10
                 Console.Clear();
                 if (inventario.ContainsKey(clave))
                 {
-
+                    Console.WriteLine($"Se ha eliminado el producto {inventario[clave]}");
+                    inventario.Remove(clave);
+                    continuar = true;
                 }
                 else
                 {
