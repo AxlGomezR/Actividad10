@@ -11,6 +11,7 @@ namespace dicci19
         static void Main(string[] args)
         {
             Dictionary<string,double> notas = new Dictionary<string,double>();
+            bool continuar;
             int opcion;
             do
             {
@@ -20,6 +21,31 @@ namespace dicci19
                 Console.WriteLine("3) Mostrar notas");
                 Console.WriteLine("4) Salir");
                 opcion = int.Parse(Console.ReadLine());
+                Console.Clear();
+                continuar = false;
+                switch (opcion)
+                {
+                    case 1:
+                        do
+                        {
+                            Console.WriteLine("Ingrese el nombre del estudiante");
+                            string nombre = Console.ReadLine();
+                            Console.Clear();
+                            if (notas.ContainsKey(nombre))
+                            {
+                                Console.WriteLine("Este estudiante ya ha sido ingresado\n");
+                            }
+                            else
+                            {
+                                continuar = true;
+                                Console.WriteLine("Ingrese la nota del estudiante");
+                            }
+                        } while (continuar==false);
+                        break;
+                    default:
+                        Console.WriteLine("Asegurese de ingresar una opción válida");
+                        break;
+                }
             } while (opcion!=4);
         }
     }
