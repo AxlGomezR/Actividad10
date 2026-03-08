@@ -15,6 +15,11 @@ namespace dicci1
             Console.WriteLine("Prueba");
             Console.WriteLine("Prueba");
             Console.WriteLine("Prueba");
+            Console.WriteLine("Prueba");
+            Console.WriteLine("Prueba");
+            Console.WriteLine("Prueba");
+            Console.WriteLine("Prueba");
+            Console.WriteLine("Prueba");
         }
     }
 }
