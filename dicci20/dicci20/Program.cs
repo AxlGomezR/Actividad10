@@ -25,11 +25,12 @@ namespace dicci20
                 {
                     Console.WriteLine("Ingrese el nombre del estudiante");
                     string nombre = Console.ReadLine();
+                    int edad;
                     continuar = false;
                     do
                     {
                         Console.WriteLine("\nIngrese la edad del estudiante");
-                        int edad = int.Parse(Console.ReadLine());
+                        edad = int.Parse(Console.ReadLine());
                         if (edad >= 0)
                         {
                             continuar = true;
@@ -40,6 +41,9 @@ namespace dicci20
                             Console.WriteLine("Ingrese una opción válida\n");
                         }
                     } while (continuar==false);
+                    Console.WriteLine("\nIngrese la carrera del estudiante");
+                    string carrera = Console.ReadLine();
+                    estudiantes.Add(carne, (nombre, edad, carrera));
                 }
             }
         }
