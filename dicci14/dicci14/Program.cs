@@ -19,6 +19,11 @@ namespace dicci14
             foreach (var item in ciudades) {
                 Console.Write($"{item.Key} ");
             }
+            Console.WriteLine("\nCiudades:");
+            foreach (var item in ciudades)
+            {
+                Console.Write($"{item.Value} ");
+            }
         }
     }
 }
