@@ -20,7 +20,19 @@ namespace dicci8
                 Console.WriteLine("Ingrese la ID del empleado que desea modificar");
                 int id = int.Parse(Console.ReadLine());
                 Console.Clear();
-
+                if (empleados.ContainsKey(id))
+                {
+                    Console.WriteLine("Ingrese el nuevo nombre");
+                    string nombre = Console.ReadLine();
+                    empleados[id] = nombre;
+                    Console.WriteLine("El nombre se ha modificado correctamente");
+                    Console.WriteLine($"El nuevo nombre es {empleados[id]}");
+                    continuar = true;
+                }
+                else
+                {
+                    Console.WriteLine("El ID ingresada no existe en el diccionario");
+                }
             } while (continuar==false);
         }
     }
