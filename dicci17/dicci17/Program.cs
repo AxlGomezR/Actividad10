@@ -45,6 +45,25 @@ namespace dicci17
                             }
                         } while (continuar==false);
                         break;
+                    case 2:
+                        if (inventario.Count == 0)
+                        {
+                            Console.WriteLine("No se ha ingresado ningún producto\n");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Ingrese la clave del producto que desea eliminar");
+                            int clave = int.Parse(Console.ReadLine());
+                            if (inventario.ContainsKey(clave))
+                            {
+                                Console.WriteLine($"Se ha eliminado el producto {inventario[clave]}\n");
+                            }
+                            else
+                            {
+                                Console.WriteLine("La clave ingresada no existe\n");
+                            }
+                        }
+                        break;
                     default:
                         Console.WriteLine("Asegurese de ingresar una opción válida");
                         break;
