@@ -16,6 +16,7 @@ namespace dicci4
             ciudades.Add(3,"Paris");
             ciudades.Add(4,"Buenos Aires");
             ciudades.Add(5,"Medellín");
+            Console.WriteLine($"La cuarta ciudad es: {ciudades[4]}");
         }
     }
 }
