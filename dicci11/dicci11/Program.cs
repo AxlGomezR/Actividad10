@@ -16,7 +16,10 @@ namespace dicci11
             estudiantes.Add(103, "Javier");
             estudiantes.Add(104, "Diego");
             estudiantes.Add(105, "Luisa");
-            
+            foreach (var item in estudiantes)
+            {
+                Console.WriteLine($"Clave: {item.Key} - Nombre: {item.Value}");
+            }
         }
     }
 }
