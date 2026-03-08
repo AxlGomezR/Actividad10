@@ -12,6 +12,7 @@ namespace dicci16
         {
             Dictionary<int,string> estudiantes = new Dictionary<int,string>();
             int opcion;
+            bool continuar;
             do
             {
                 Console.WriteLine("Seleccione una opción");
@@ -20,10 +21,24 @@ namespace dicci16
                 Console.WriteLine("3) Salir");
                 opcion = int.Parse(Console.ReadLine());
                 Console.Clear();
+                continuar = false;
                 switch (opcion)
                 {
                     case 1:
+                        do
+                        {
+                            Console.WriteLine("Ingrese la clave del estudiante");
+                            int clave = int.Parse(Console.ReadLine());
+                            Console.Clear();
+                            if (estudiantes.ContainsKey(clave))
+                            {
+                                Console.WriteLine("Asegurese de ingresar una clave que no haya sido ingresada");
+                            }
+                            else
+                            {
 
+                            }
+                        } while (continuar == false);
                         break;
                     default:
                         Console.WriteLine("Asegurese de ingresar una opción válida");
