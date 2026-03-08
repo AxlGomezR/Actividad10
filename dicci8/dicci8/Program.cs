@@ -10,6 +10,11 @@ namespace dicci8
     {
         static void Main(string[] args)
         {
+            Dictionary<int,string> empleados = new Dictionary<int,string>();
+            empleados.Add(101, "Jorge");
+            empleados.Add(102, "Jaime");
+            empleados.Add(103, "Ana");
+
         }
     }
 }
