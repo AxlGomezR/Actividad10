@@ -10,7 +10,7 @@ namespace dicci1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Prueba");
+            Dictionary<int, string> estudiantes = new Dictionary<int, string>();
         }
     }
 }
