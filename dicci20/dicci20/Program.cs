@@ -10,7 +10,7 @@ namespace dicci20
     {
         static void Main(string[] args)
         {
-            Dictionary<int, (string, int, string)> estudiantes = new Dictionary<int, (string, int, string)>();
+            Dictionary<int, (string nom, int ed, string carr)> estudiantes = new Dictionary<int, (string, int, string)>();
             bool continuar;
             for(int i =1; i<=3; i++)
             {
@@ -23,7 +23,7 @@ namespace dicci20
                 }
                 else
                 {
-                    Console.WriteLine("Ingrese el nombre del estudiante");
+                    Console.WriteLine("\nIngrese el nombre del estudiante");
                     string nombre = Console.ReadLine();
                     int edad;
                     continuar = false;
@@ -45,6 +45,14 @@ namespace dicci20
                     string carrera = Console.ReadLine();
                     estudiantes.Add(carne, (nombre, edad, carrera));
                 }
+                Console.Clear();
+            }
+            foreach (var item in estudiantes)
+            {
+                Console.WriteLine($"Nombre: {item.Value.nom}");
+                Console.WriteLine($"Carné: {item.Key}");
+                Console.WriteLine($"Edad: {item.Value.ed}");
+                Console.WriteLine($"Carrera: {item.Value.carr}\n");
             }
         }
     }
