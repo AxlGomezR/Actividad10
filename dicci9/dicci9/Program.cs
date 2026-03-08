@@ -20,7 +20,14 @@ namespace dicci9
                 Console.WriteLine("Ingrese el nombre del estudiante para desplegar su nota");
                 string nombre = Console.ReadLine();
                 Console.Clear();
-
+                if (notas.ContainsKey(nombre))
+                {
+                    
+                }
+                else
+                {
+                    Console.WriteLine("El nombre ingresado no se encuentra en el diccionario");
+                }
             } while (continuar==false);
         }
     }
