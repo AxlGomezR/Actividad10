@@ -15,6 +15,10 @@ namespace dicci14
             ciudades.Add(102, "Caracas");
             ciudades.Add(103, "San Salvador");
             ciudades.Add(104, "Chicago");
+            Console.WriteLine("Claves: ");
+            foreach (var item in ciudades) {
+                Console.Write($"{item.Key} ");
+            }
         }
     }
 }
