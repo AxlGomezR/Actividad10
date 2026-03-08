@@ -23,7 +23,11 @@ namespace dicci18
                 }
                 else
                 {
-
+                    Console.WriteLine("Ingrese la contraseña de su usuario");
+                    string contra = Console.ReadLine();
+                    Console.Clear();
+                    usuarios.Add(usuario, contra);
+                    Console.WriteLine("Se ha registrado correctamente\n");
                 }
             } while (continuar==false);
         }
