@@ -16,7 +16,10 @@ namespace dicci15
             empleados.Add(103, "Empleado3");
             empleados.Add(104, "Empleado4");
             empleados.Add(105, "Empleado5");
-            
+            foreach (var item in empleados)
+            {
+                Console.WriteLine($"Clave: {item.Key} - Nombre: {item.Value}");
+            }
         }
     }
 }
