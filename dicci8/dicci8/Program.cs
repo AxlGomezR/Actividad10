@@ -14,7 +14,14 @@ namespace dicci8
             empleados.Add(101, "Jorge");
             empleados.Add(102, "Jaime");
             empleados.Add(103, "Ana");
+            bool continuar = false;
+            do
+            {
+                Console.WriteLine("Ingrese la ID del empleado que desea modificar");
+                int id = int.Parse(Console.ReadLine());
+                Console.Clear();
 
+            } while (continuar==false);
         }
     }
 }
