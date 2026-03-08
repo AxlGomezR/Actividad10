@@ -12,8 +12,16 @@ namespace dicci9
         {
             Dictionary<string, int> notas = new Dictionary<string, int>();
             notas.Add("Jimena",65);
-            notas.Add("Julia", 65);
-            notas.Add("Pedro", 65);
+            notas.Add("Julia", 70);
+            notas.Add("Pedro", 55);
+            bool continuar = false;
+            do
+            {
+                Console.WriteLine("Ingrese el nombre del estudiante para desplegar su nota");
+                string nombre = Console.ReadLine();
+                Console.Clear();
+
+            } while (continuar==false);
         }
     }
 }
