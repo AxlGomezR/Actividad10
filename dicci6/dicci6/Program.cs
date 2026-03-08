@@ -10,6 +10,10 @@ namespace dicci6
     {
         static void Main(string[] args)
         {
+            Dictionary<int, string> estudiantes = new Dictionary<int, string>();
+            estudiantes.Add(1,"Jill");
+            estudiantes.Add(1, "Rebeca");
+            estudiantes.Add(1, "Chris");
         }
     }
 }
