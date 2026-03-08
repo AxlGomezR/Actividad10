@@ -37,7 +37,11 @@ namespace dicci17
                             }
                             else
                             {
-
+                                Console.WriteLine("Ingrese el nombre del producto");
+                                string nombre = Console.ReadLine();
+                                Console.Clear();
+                                inventario.Add(clave,nombre);
+                                Console.WriteLine("El producto se ha añadido correctamente\n");
                             }
                         } while (continuar==false);
                         break;
