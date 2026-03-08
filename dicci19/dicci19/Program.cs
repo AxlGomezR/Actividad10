@@ -56,7 +56,7 @@ namespace dicci19
                     case 2:
                         if (notas.Count == 0)
                         {
-                            Console.WriteLine("No se ha ingresado ninguna nota");
+                            Console.WriteLine("No se ha ingresado ninguna nota\n");
                         }
                         else
                         {
@@ -87,6 +87,23 @@ namespace dicci19
                                 }
                             } while (continuar==false);
                         }
+                        break;
+                    case 3:
+                        if (notas.Count == 0)
+                        {
+                            Console.WriteLine("No se ha ingresado ninguna nota\n");
+                        }
+                        else
+                        {
+                            foreach (var item in notas)
+                            {
+                                Console.WriteLine($"La nota de {item.Key} es: {item.Value}");
+                            }
+                            Console.WriteLine("");
+                        }
+                        break;
+                    case 4:
+                        Console.WriteLine("Saliendo...");
                         break;
                     default:
                         Console.WriteLine("Asegurese de ingresar una opción válida");
