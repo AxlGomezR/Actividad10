@@ -10,6 +10,10 @@ namespace dicci9
     {
         static void Main(string[] args)
         {
+            Dictionary<string, int> notas = new Dictionary<string, int>();
+            notas.Add("Jimena",65);
+            notas.Add("Julia", 65);
+            notas.Add("Pedro", 65);
         }
     }
 }
