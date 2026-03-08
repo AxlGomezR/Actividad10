@@ -22,7 +22,16 @@ namespace dicci7
                 clave = int.Parse(Console.ReadLine());
                 if (productos.ContainsKey(clave))
                 {
+                    Console.Clear();
                     Console.WriteLine("Ingrese una clave diferente a una ya existente");
+                }
+                else
+                {
+                    continuar = true;
+                    Console.WriteLine("Ingrese el nombre del producto");
+                    string producto = Console.ReadLine();
+                    productos.Add(clave,producto);
+                    Console.WriteLine($"Se ha añadido correctamente el producto: {productos[clave]}");
                 }
             } while (continuar==false);
         }
