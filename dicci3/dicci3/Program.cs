@@ -14,7 +14,7 @@ namespace dicci3
             estudiantes.Add("Ana",76);
             estudiantes.Add("Marian", 80);
             estudiantes.Add("Carlos", 74);
-
+            Console.WriteLine($"La nota de Marian es: {estudiantes["Marian"]}");
         }
     }
 }
